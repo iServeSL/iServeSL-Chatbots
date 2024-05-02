@@ -1,0 +1,29 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Route to Police Service Chatbot
+  steps:
+  - intent: police_service
+  - action: action_route_to_police_service
+
+- rule: Route to Grama Niladhari Service Chatbot
+  steps:
+  - intent: grama_niladhari_service
+  - action: action_route_to_grama_niladhari_service
+
+- rule: Handle Common Queries
+  steps:
+  - intent: common_queries
+  - action: utter_ask_common_query  

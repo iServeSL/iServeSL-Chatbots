@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - police_service
+  - grama_niladhari_service
+  - common_queries
+
+responses:
+  utter_greet:
+  - text: "Hey! How can i help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot designed by iServeSL to assist with government services in Sri Lanka, offering seamless and efficient support through our centralized web platform. With our cutting-edge distributed AI chatbot architecture, I'm here to automate processes and enhance your user experience, making interaction with government services effortless and intelligent."
+
+  utter_ask_police_service:
+    - text: "You have a question related to police services. Redirecting you to the Police Services Chatbot."
+  
+  utter_ask_grama_niladhari_service:
+    - text: "You have a question related to Grama Niladhari services. Redirecting you to the Grama Niladhari Services Chatbot."
+
+  utter_ask_common_query:
+    - text: "iServeSL revolutionizes government services in Sri Lanka through its centralized web platform, leveraging cutting-edge distributed AI chatbot architecture. By automating processes and enhancing user experience, iServeSL provides seamless access to government services, addressing inefficiencies and frustrations associated with manual procedures. Experience the future of streamlined government-citizen interaction with iServeSL, where accessing services is effortless, efficient, and intelligent."
+
+
+
+actions:
+  - action_route_to_police_service
+  - action_route_to_grama_niladhari_service    
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

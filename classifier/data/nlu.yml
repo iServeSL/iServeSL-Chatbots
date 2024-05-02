@@ -1,0 +1,219 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: police_service
+  examples: |
+    - How do I file a police report?
+    - I need to report a theft.
+    - Can I report an accident online?
+    - What documents are needed to file a report?
+    - Do I need ID to report something?
+    - How do I check my report's status?
+    - What's the update on the report I filed?
+    - I need to report a car accident.
+    - What are the steps to report a road accident?
+    - How can I report domestic abuse?
+    - Is there a way to report domestic violence anonymously?
+    - I lost my wallet, how do I report it?
+    - Who to contact about a lost item?
+    - I lost one of my items what should i do?
+    - Where can I get legal advice on a criminal matter?
+    - Can the police provide legal guidance?
+    - I want to compliment an officer who helped me.
+    - How can I give feedback about good police service?
+    - I want to make a complaint about an officer.
+    - How do I report police misconduct?
+    - How do I pay a traffic fine?
+    - Where can I settle my traffic tickets?
+    - I need a permit for a public event.
+    - How do I apply for a parade permit?
+    - Can you give me safety tips for traveling at night?
+    - What are the best practices to stay safe in the city?
+    - How do I join the neighborhood watch?
+    - What does participating in a neighborhood watch involve?
+    - I want to report a missing person.
+    - What is the procedure to declare someone missing?
+    - What is the emergency number?
+    - How do I contact the police in an emergency?
+    - How do I report illegal parking?
+    - Someone is blocking my driveway. What can I do?
+    - I believe I'm a victim of cybercrime.
+    - How do I report online fraud?
+    - We need police for event security. How do we arrange that?
+    - What is needed to get police security for an event?
+    - I have information about drug trafficking.
+    - Where can I report drug activity anonymously?
+    - There's a stray dog causing trouble. Who do I call?
+    - A dangerous animal is loose in my neighborhood.
+    - Are there any road closures today?
+    - How can I find out about road work in my area?
+    - I witnessed a crime. How can I give a statement?
+    - I want to provide information about an incident I saw.
+    - How can I request public records?
+    - I need access to a police report from last year.
+    - What programs are available for juvenile offenders?
+    - How can I get help for a troubled teen?
+    - How do I request a police character certificate?
+    - I need to request a police character certificate.
+    - Can I request a police character certificate online?
+    - What documents are needed to request a police character certificate?
+    - Do I need ID to request a police character certificate?
+    - How do I check my police character certificate's status?
+    - What's the update on the request I sent?
+    - Do I need a police character certificate when joining with a new employer?
+    - Should I get a police character certificate when joining a new company?
+    - Is it necessary to provide a police character certificate when joining a new company?
+    - Why my police character certificate request failed?
+    - Why my police character certificate request got rejected?
+
+
+
+- intent: grama_niladhari_service
+  examples: |
+    - How do I request a grama niladari certificate?
+    - I need to request a grama niladari certificate.
+    - Can I request a grama niladari certificate online?
+    - What documents are needed to request a grama niladari certificate?
+    - Do I need ID to request a grama niladari certificate?
+    - How do I check my grama niladari certificate's status?
+    - What's the update on the request I sent?
+    - Do I need a grama niladari certificate when joining with a new employer?
+    - Should I get a grama niladari certificate when joining a new company?
+    - Is it necessary to provide a grama niladari certificate when joining a new company?
+    - What is my grama niladari boundary?
+    - How should I know my grama niladari boundary?
+    - How can I check what is my grama niladari boundary?
+    - Do I need approval for cutting down a tree?
+    - I want to cut down a big and old tree in my garden, do I need approval?
+    - Should I get an approval before cutting down a big tree?
+    - Do I need approval for building a wall around my house?
+    - I want to build a wall around my house, do I need approval?
+    - Should I get an approval before building a wall around my house?
+    - Do I need to contact grama niladari to get the voting rights?
+    - I want to get my voting rights, how can I do that?
+    - How can I get my voting rights?
+    - Should I provide a grama niladari certificate when applying for a NIC?
+    - Do I need a grama niladari certificate to apply for a NIC?
+    - I want to apply for a new NIC, do I need a grama niladari certifiacte for that?
+    - My family member has been passed away. Should I inform it to the grama niladari?
+    - Should I inform the grama niladari about a death of a relative?
+    - Should I inform the grama niladari about a death of a family member?
+    - My family member has died. Should I inform grama niladari?
+    - I want to get my pension allowance. Do I required to provide a grama niladari certificate for that?
+    - Do I need any documents to get my pension allowance?
+    - Should I submit a grama niladari certificate to get my pension allowance?
+    - Do I need a grama niladari certificate to get my pension allowance?
+    - Should I get a grama niladari certifiacte when doing a business registration?
+    - Do I need a grama niladari certificate for a business registration?
+    - Grama niladari certificate for a business registration?
+    - How can I get registered for the allowance for the low income families?
+    - Should I inform grama niladari to get registered in the allowance program for low income families?
+    - How can I get registered in the allowance program for low income families?
+    - I want to apply for a loan, should I contact grama niladari?
+    - Should I contact grama niladari to get a income certifiacte?
+    - How can I get my income certificate?
+    - What is the contact number of grama niladari in my area?
+    - Contact numbers of grama niladari?
+    - Grama niladari contact number?
+    - Where can I meet the grama niladari?
+    - Where is the grama niladari office?
+    - How can I meet the grama niladari?
+    - Why my grama niladari certificate request failed?
+    - Why my grama niladari certificate request got rejected?
+
+
+- intent: common_queries
+  examples: |
+    - What is iServeSL?
+    - iServeSL    
+
+      
