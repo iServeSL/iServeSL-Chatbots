@@ -1,0 +1,42 @@
+version: "3.1"
+stories:
+- story: Report an accident (.\tests\test_stories.yml)
+  steps:
+  - intent: Report_Accident
+  - action: utter_report_accident  # predicted: utter_Report_Accident
+  - bot: Ensure safety first, then report the accident at the nearest police station with all necessary documents.  # predicted: action_listen
+- story: Report domestic violence (.\tests\test_stories.yml)
+  steps:
+  - intent: Domestic_Violence_Report
+  - action: utter_domestic_violence_report  # predicted: utter_Domestic_Violence_Report
+  - bot: You can report anonymously by calling our hotline or visiting a station. Your privacy and safety are our priority.  # predicted: action_listen
+- story: Request police character certificate (.\tests\test_stories.yml)
+  steps:
+  - intent: Request_Police_Character_Certificate
+  - action: utter_request_character_certificate  # predicted: utter_Request_Police_Character_Certificate
+  - bot: To request a police character certificate, please provide your NIC number, and residential address. You can do this at your local police station or via our online portal by accessing the 'Police Service' on your iServeSL dashboard. Once the online request has been sent and processed, you will receive a SMS regarding the completion of the certificate. Else you can click on the 'Requests' button in your dashboard and check the status of the submitted certificate request.  # predicted: action_listen
+- story: Check police character certificate status (.\tests\test_stories.yml)
+  steps:
+  - intent: Check_Character_Certificate_Status
+  - action: utter_check_character_certificate_status  # predicted: utter_Check_Character_Certificate_Status
+  - bot: Check the status by logging into our portal. You can click on the 'Requests' button on the dashboard to check the status of your request.  # predicted: action_listen
+- story: Compliment an officer (.\tests\test_stories.yml)
+  steps:
+  - intent: Compliment_Officer
+  - action: utter_compliment_officer  # predicted: utter_Compliment_Officer after action_unlikely_intent
+  - bot: We appreciate your feedback. Please visit our website or call our feedback line to compliment an officer.  # predicted: action_listen
+- story: Lost and found report (.\tests\test_stories.yml)
+  steps:
+  - intent: Lost_And_Found
+  - action: utter_lost_and_found  # predicted: utter_Lost_And_Found
+  - bot: Report lost items at the nearest station or online. Provide a good description for better assistance.  # predicted: action_listen
+- story: File a police report (.\tests\test_stories.yml)
+  steps:
+  - intent: File_Police_Report
+  - action: utter_file_report  # predicted: utter_File_Police_Report after action_unlikely_intent
+  - bot: To file a police report, please provide your full name, contact information, and detailed incident description. You can do this at your local station or via our online portal.  # predicted: action_listen
+- story: Check report status (.\tests\test_stories.yml)
+  steps:
+  - intent: Check_Report_Status
+  - action: utter_check_report_status  # predicted: utter_Check_Report_Status after action_unlikely_intent
+  - bot: Check the status by logging into our portal or by calling the station directly.  # predicted: action_listen

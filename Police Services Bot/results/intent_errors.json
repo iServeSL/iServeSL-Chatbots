@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Do I need ID to request a police character certificate?",
+    "intent": "Required_Documents_For_Character_Certificate",
+    "intent_prediction": {
+      "name": "Request_Police_Character_Certificate",
+      "confidence": 0.5073922872543335
+    }
+  }
+]

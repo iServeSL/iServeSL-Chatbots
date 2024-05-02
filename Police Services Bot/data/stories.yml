@@ -1,0 +1,191 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: police report filing
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: File_Police_Report
+  - action: utter_File_Police_Report
+  - intent: Required_Documents_For_Report
+  - action: utter_Required_Documents_For_Report
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: accident report and follow-up
+  steps:
+  - intent: Report_Accident
+  - action: utter_Report_Accident
+  - intent: Check_Report_Status
+  - action: utter_Check_Report_Status
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: domestic violence report and anonymous inquiry
+  steps:
+  - intent: Domestic_Violence_Report
+  - action: utter_Domestic_Violence_Report
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: legal advice and feedback
+  steps:
+  - intent: Legal_Advice
+  - action: utter_Legal_Advice
+  - intent: Compliment_Officer
+  - action: utter_Compliment_Officer
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: traffic fine payment and complaint against officer
+  steps:
+  - intent: Traffic_Fine_Payment
+  - action: utter_Traffic_Fine_Payment
+  - intent: Complaint_Against_Officer
+  - action: utter_Complaint_Against_Officer
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: permit application and safety tips
+  steps:
+  - intent: Permit_Application
+  - action: utter_Permit_Application
+  - intent: Safety_Tips
+  - action: utter_Safety_Tips
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: emergency contact and immediate response
+  steps:
+  - intent: Emergency_Contact
+  - action: utter_Emergency_Contact
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: neighborhood watch inquiry and participation
+  steps:
+  - intent: Neighborhood_Watch
+  - action: utter_Neighborhood_Watch
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: parking violation report
+  steps:
+  - intent: Parking_Violation
+  - action: utter_Parking_Violation
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: event security arrangement
+  steps:
+  - intent: Event_Security
+  - action: utter_Event_Security
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: drug-related inquiry and confidentiality
+  steps:
+  - intent: Drug_Related_Inquiry
+  - action: utter_Drug_Related_Inquiry
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: road closure information request
+  steps:
+  - intent: Road_Closure_Information
+  - action: utter_Road_Closure_Information
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: witness statement provision
+  steps:
+  - intent: Witness_Statement
+  - action: utter_Witness_Statement
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: public records request and access
+  steps:
+  - intent: Public_Records_Request
+  - action: utter_Public_Records_Request
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: juvenile delinquency program inquiry
+  steps:
+  - intent: Juvenile_Delinquency
+  - action: utter_Juvenile_Delinquency
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Lost and Found program inquiry
+  steps:
+  - intent: Lost_And_Found
+  - action: utter_Lost_And_Found
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Request Police Character Certificate program inquiry
+  steps:
+  - intent: Request_Police_Character_Certificate
+  - action: utter_Request_Police_Character_Certificate
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: Required Documents For Character Certificate program inquiry
+  steps:
+  - intent: Required_Documents_For_Character_Certificate
+  - action: utter_Required_Documents_For_Character_Certificate
+  - intent: goodbye
+  - action: utter_goodbye    
+
+- story: Check Character Certificate Status program inquiry
+  steps:
+  - intent: Check_Character_Certificate_Status
+  - action: utter_Check_Character_Certificate_Status
+  - intent: goodbye
+  - action: utter_goodbye 
+
+- story: New Employer Character Certificate program inquiry
+  steps:
+  - intent: New_Employer_Character_Certificate
+  - action: utter_New_Employer_Character_Certificate
+  - intent: goodbye
+  - action: utter_goodbye  
+
+- story: Police_Certificate_Request_Failure program inquiry
+  steps:
+  - intent: Police_Certificate_Request_Failure
+  - action: utter_Police_Certificate_Request_Failure
+  - intent: goodbye
+  - action: utter_goodbye    

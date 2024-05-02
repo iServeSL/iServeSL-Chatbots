@@ -1,0 +1,166 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - File_Police_Report
+  - Required_Documents_For_Report
+  - Check_Report_Status
+  - Report_Accident
+  - Domestic_Violence_Report
+  - Lost_And_Found
+  - Legal_Advice
+  - Compliment_Officer
+  - Complaint_Against_Officer
+  - Traffic_Fine_Payment
+  - Permit_Application
+  - Safety_Tips
+  - Neighborhood_Watch
+  - Missing_Person
+  - Emergency_Contact
+  - Parking_Violation
+  - Cybercrime_Report
+  - Event_Security
+  - Drug_Related_Inquiry
+  - Animal_Disturbance
+  - Road_Closure_Information
+  - Witness_Statement
+  - Public_Records_Request
+  - Juvenile_Delinquency
+  - Request_Police_Character_Certificate
+  - Required_Documents_For_Character_Certificate
+  - Check_Character_Certificate_Status
+  - New_Employer_Character_Certificate
+  - Police_Certificate_Request_Failure
+
+responses:
+  utter_greet:
+    - text: "Hey! How can I help you?"
+  utter_goodbye:
+    - text: "Bye. Have a great day."
+  utter_affirm:
+    - text: "That sounds good!"
+  utter_deny:
+    - text: "Okay, no problem."
+  utter_mood_great:
+    - text: "Great to hear that!"
+  utter_mood_unhappy:
+    - text: "Sorry to hear that."
+  utter_happy:
+    - text: "Great to hear that! Anything else I can do for you?"
+  utter_cheer_up:
+    - text: "Cheer up! Every cloud has a silver lining."  
+  utter_did_that_help:
+    - text: "Did that help you?"  
+  utter_iamabot:
+    - text: "I am a bot designed by iServeSL to assist with government services in Sri Lanka, offering seamless and efficient support through our centralized web platform. With our cutting-edge distributed AI chatbot architecture, I'm here to automate processes and enhance your user experience, making interaction with government services effortless and intelligent."
+  utter_File_Police_Report:
+    - text: "To file a police report, please provide your full name, contact information, and detailed incident description. You can do this at your local station or via our online portal."
+  utter_Required_Documents_For_Report:
+    - text: "Please bring a government-issued ID and any relevant evidence like photos or documents."
+  utter_Check_Report_Status:
+    - text: "Check the status by logging into our portal or by calling the station directly."
+  utter_Report_Accident:
+    - text: "Ensure safety first, then report the accident at the nearest police station with all necessary documents."
+  utter_Domestic_Violence_Report:
+    - text: "You can report anonymously by calling our hotline or visiting a station. Your privacy and safety are our priority."
+  utter_Lost_And_Found:
+    - text: "Report lost items at the nearest station or online. Provide a good description for better assistance."
+  utter_Legal_Advice:
+    - text: "We offer general information, but for specific legal advice, please contact a professional lawyer."
+  utter_Compliment_Officer:
+    - text: "We appreciate your feedback. Please visit our website or call our feedback line to compliment an officer."
+  utter_Complaint_Against_Officer:
+    - text: "We take complaints seriously. Please file your complaint online or at any station to initiate a review."
+  utter_Traffic_Fine_Payment:
+    - text: "Traffic fines can be paid online through our portal or at designated payment centers."
+  utter_Permit_Application:
+    - text: "Permit applications are available online or at your local station. Please submit the required documents."
+  utter_Safety_Tips:
+    - text: "Stay aware of your surroundings, keep valuable items hidden, and travel in groups if possible. More tips are on our website."
+  utter_Neighborhood_Watch:
+    - text: "Joining a neighborhood watch involves monitoring community activities and reporting suspicious behavior. Contact your local community officer for details."
+  utter_Missing_Person:
+    - text: "Report a missing person as soon as possible with all relevant details and photos at any police station."
+  utter_Emergency_Contact:
+    - text: "Dial our emergency number 911 for immediate assistance. For non-emergencies, please use our regular contact lines."
+  utter_Parking_Violation:
+    - text: "Report parking violations to our non-emergency line or use our online reporting tool. Provide the vehicle details and location."
+  utter_Cybercrime_Report:
+    - text: "Report cybercrimes through our dedicated cyber unit online or at your local station. Provide all correspondence and evidence."
+  utter_Event_Security:
+    - text: "Contact our special events office to discuss your event's details, expected attendance, and security needs."
+  utter_Drug_Related_Inquiry:
+    - text: "Report drug-related activities to our hotline or online portal anonymously. Your information will be kept confidential."
+  utter_Animal_Disturbance:
+    - text: "Animal disturbances should be reported to local animal control services. We can provide contact details if needed."
+  utter_Road_Closure_Information:
+    - text: "Road closure information is updated regularly on our traffic management website and through local radio stations."
+  utter_Witness_Statement:
+    - text: "Witness statements can be given at any police station or through our confidential tips line. Your information is valuable."
+  utter_Public_Records_Request:
+    - text: "Public records can be requested via our records department. Please fill out the necessary forms online or at a station."
+  utter_Juvenile_Delinquency:
+    - text: "We offer various programs for juveniles including counseling, community service, and mentorship. Contact our juvenile services for more information."
+  utter_Request_Police_Character_Certificate:
+    - text: "To request a police character certificate, please provide your NIC number, and residential address. You can do this at your local police station or via our online portal by accessing the 'Police Service' on your iServeSL dashboard. Once the online request has been sent and processed, you will receive a SMS regarding the completion of the certificate. Else you can click on the 'Requests' button in your dashboard and check the status of the submitted certificate request."
+  utter_Required_Documents_For_Character_Certificate:
+    - text: "Please bring a government-issued NIC if you are going to visit the police station physically. You can just provide the NIC number and the residential details online if you are going to request it via iServeSL web portal."
+  utter_Check_Character_Certificate_Status:
+    - text: "Check the status by logging into our portal. You can click on the 'Requests' button on the dashboard to check the status of your request."  
+  utter_New_Employer_Character_Certificate:
+    - text: "Yes! Most of the employers in Sri Lanka ask their new joinees to provide them a police character certificate to check the background of the employee."
+  utter_default_fallback:
+    - text: "As a chatbot, I have limited capabilities. If you wish to get more detailed information, please contact the relevant service's customer support." 
+  utter_Police_Certificate_Request_Failure:
+    - text: "Make sure your personal details such as NIC and residential details are correctly entered in the form. If your request keep getting rejected, please contact your nearest police station and inform them about the situation."   
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_affirm
+  - utter_deny
+  - utter_mood_great
+  - utter_mood_unhappy
+  - utter_happy
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_iamabot
+  - utter_File_Police_Report
+  - utter_Required_Documents_For_Report
+  - utter_Check_Report_Status
+  - utter_Report_Accident
+  - utter_Domestic_Violence_Report
+  - utter_Lost_And_Found
+  - utter_Legal_Advice
+  - utter_Compliment_Officer
+  - utter_Complaint_Against_Officer
+  - utter_Traffic_Fine_Payment
+  - utter_Permit_Application
+  - utter_Safety_Tips
+  - utter_Neighborhood_Watch
+  - utter_Missing_Person
+  - utter_Emergency_Contact
+  - utter_Parking_Violation
+  - utter_Cybercrime_Report
+  - utter_Event_Security
+  - utter_Drug_Related_Inquiry
+  - utter_Animal_Disturbance
+  - utter_Road_Closure_Information
+  - utter_Witness_Statement
+  - utter_Public_Records_Request
+  - utter_Juvenile_Delinquency
+  - utter_Request_Police_Character_Certificate
+  - utter_Check_Character_Certificate_Status
+  - utter_New_Employer_Character_Certificate
+  - utter_Police_Certificate_Request_Failure
+  - utter_default_fallback
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

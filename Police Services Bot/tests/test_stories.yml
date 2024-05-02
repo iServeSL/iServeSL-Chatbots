@@ -1,0 +1,130 @@
+version: "3.0"
+stories:
+  - story: happy path 1
+    steps:
+      - user: "hello there!"
+        intent: greet
+      - action: utter_greet
+      - user: "amazing"
+        intent: mood_great
+      - action: utter_happy
+
+  - story: happy path 2
+    steps:
+      - user: "hello there!"
+        intent: greet
+      - action: utter_greet
+      - user: "amazing"
+        intent: mood_great
+      - action: utter_happy
+      - user: "bye-bye!"
+        intent: goodbye
+      - action: utter_goodbye
+
+  - story: sad path 1
+    steps:
+      - user: "hello"
+        intent: greet
+      - action: utter_greet
+      - user: "not good"
+        intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - user: "yes"
+        intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - user: "hello"
+        intent: greet
+      - action: utter_greet
+      - user: "not good"
+        intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - user: "not really"
+        intent: deny
+      - action: utter_goodbye
+
+  - story: sad path 3
+    steps:
+      - user: "hi"
+        intent: greet
+      - action: utter_greet
+      - user: "very terrible"
+        intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - user: "no"
+        intent: deny
+      - action: utter_goodbye
+
+  - story: say goodbye
+    steps:
+      - user: "bye-bye!"
+        intent: goodbye
+      - action: utter_goodbye
+
+  - story: bot challenge
+    steps:
+      - user: "are you a bot?"
+        intent: bot_challenge
+      - action: utter_iamabot
+
+  - story: File a police report
+    steps:
+      - user: "How do I file a police report?"
+        intent: File_Police_Report
+      - action: utter_file_report
+      - bot: "To file a police report, please provide your full name, contact information, and detailed incident description. You can do this at your local station or via our online portal."
+
+  - story: Check report status
+    steps:
+      - user: "How do I check my report's status?"
+        intent: Check_Report_Status
+      - action: utter_check_report_status
+      - bot: "Check the status by logging into our portal or by calling the station directly."
+
+  - story: Report an accident
+    steps:
+      - user: "I need to report a car accident."
+        intent: Report_Accident
+      - action: utter_report_accident
+      - bot: "Ensure safety first, then report the accident at the nearest police station with all necessary documents."
+
+  - story: Report domestic violence
+    steps:
+      - user: "How can I report domestic abuse?"
+        intent: Domestic_Violence_Report
+      - action: utter_domestic_violence_report
+      - bot: "You can report anonymously by calling our hotline or visiting a station. Your privacy and safety are our priority."
+
+  - story: Request police character certificate
+    steps:
+      - user: "How do I request a police character certificate?"
+        intent: Request_Police_Character_Certificate
+      - action: utter_request_character_certificate
+      - bot: "To request a police character certificate, please provide your NIC number, and residential address. You can do this at your local police station or via our online portal by accessing the 'Police Service' on your iServeSL dashboard. Once the online request has been sent and processed, you will receive a SMS regarding the completion of the certificate. Else you can click on the 'Requests' button in your dashboard and check the status of the submitted certificate request."
+
+  - story: Check police character certificate status
+    steps:
+      - user: "How do I check my police character certificate's status?"
+        intent: Check_Character_Certificate_Status
+      - action: utter_check_character_certificate_status
+      - bot: "Check the status by logging into our portal. You can click on the 'Requests' button on the dashboard to check the status of your request."
+
+  - story: Compliment an officer
+    steps:
+      - user: "I want to compliment an officer who helped me."
+        intent: Compliment_Officer
+      - action: utter_compliment_officer
+      - bot: "We appreciate your feedback. Please visit our website or call our feedback line to compliment an officer."
+
+  - story: Lost and found report
+    steps:
+      - user: "I lost my wallet, how do I report it?"
+        intent: Lost_And_Found
+      - action: utter_lost_and_found
+      - bot: "Report lost items at the nearest station or online. Provide a good description for better assistance."
+
