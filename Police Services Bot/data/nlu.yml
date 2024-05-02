@@ -1,0 +1,243 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: File_Police_Report
+  examples: |
+    - How do I file a police report?
+    - I need to report a theft.
+    - Can I report an accident online?
+
+- intent: Required_Documents_For_Report
+  examples: |
+    - What documents are needed to file a report?
+    - Do I need ID to report something?
+
+- intent: Check_Report_Status
+  examples: |
+    - How do I check my report's status?
+    - What's the update on the report I filed?
+
+- intent: Report_Accident
+  examples: |
+    - I need to report a car accident.
+    - What are the steps to report a road accident?
+
+- intent: Domestic_Violence_Report
+  examples: |
+    - How can I report domestic abuse?
+    - Is there a way to report domestic violence anonymously?
+
+- intent: Lost_And_Found
+  examples: |
+    - I lost my wallet, how do I report it?
+    - Who to contact about a lost item?
+    - I lost one of my items what should i do?
+
+- intent: Legal_Advice
+  examples: |
+    - Where can I get legal advice on a criminal matter?
+    - Can the police provide legal guidance?
+
+- intent: Compliment_Officer
+  examples: |
+    - I want to compliment an officer who helped me.
+    - How can I give feedback about good police service?
+
+- intent: Complaint_Against_Officer
+  examples: |
+    - I want to make a complaint about an officer.
+    - How do I report police misconduct?
+
+- intent: Traffic_Fine_Payment
+  examples: |
+    - How do I pay a traffic fine?
+    - Where can I settle my traffic tickets?
+
+- intent: Permit_Application
+  examples: |
+    - I need a permit for a public event.
+    - How do I apply for a parade permit?
+
+- intent: Safety_Tips
+  examples: |
+    - Can you give me safety tips for traveling at night?
+    - What are the best practices to stay safe in the city?
+
+- intent: Neighborhood_Watch
+  examples: |
+    - How do I join the neighborhood watch?
+    - What does participating in a neighborhood watch involve?
+
+- intent: Missing_Person
+  examples: |
+    - I want to report a missing person.
+    - What is the procedure to declare someone missing?
+
+- intent: Emergency_Contact
+  examples: |
+    - What is the emergency number?
+    - How do I contact the police in an emergency?
+
+- intent: Parking_Violation
+  examples: |
+    - How do I report illegal parking?
+    - Someone is blocking my driveway. What can I do?
+
+- intent: Cybercrime_Report
+  examples: |
+    - I believe I'm a victim of cybercrime.
+    - How do I report online fraud?
+
+- intent: Event_Security
+  examples: |
+    - We need police for event security. How do we arrange that?
+    - What is needed to get police security for an event?
+
+- intent: Drug_Related_Inquiry
+  examples: |
+    - I have information about drug trafficking.
+    - Where can I report drug activity anonymously?
+
+- intent: Animal_Disturbance
+  examples: |
+    - There's a stray dog causing trouble. Who do I call?
+    - A dangerous animal is loose in my neighborhood.
+
+- intent: Road_Closure_Information
+  examples: |
+    - Are there any road closures today?
+    - How can I find out about road work in my area?
+
+- intent: Witness_Statement
+  examples: |
+    - I witnessed a crime. How can I give a statement?
+    - I want to provide information about an incident I saw.
+
+- intent: Public_Records_Request
+  examples: |
+    - How can I request public records?
+    - I need access to a police report from last year.
+
+- intent: Juvenile_Delinquency
+  examples: |
+    - What programs are available for juvenile offenders?
+    - How can I get help for a troubled teen?
+
+- intent: Request_Police_Character_Certificate
+  examples: |
+    - How do I request a police character certificate?
+    - I need to request a police character certificate.
+    - Can I request a police character certificate online?
+
+- intent: Required_Documents_For_Character_Certificate
+  examples: |
+    - What documents are needed to request a police character certificate?
+    - Do I need ID to request a police character certificate?
+     
+- intent: Check_Character_Certificate_Status
+  examples: |
+    - How do I check my police character certificate's status?
+    - What's the update on the request I sent?
+
+- intent: New_Employer_Character_Certificate
+  examples: |
+    - Do I need a police character certificate when joining with a new employer?
+    - Should I get a police character certificate when joining a new company?
+    - Is it necessary to provide a police character certificate when joining a new company?
+
+- intent: New_Employer_Character_Certificate
+  examples: |
+    - Why my police character certificate request failed?
+    - Why my police character certificate request got rejected?
+
+     
+
