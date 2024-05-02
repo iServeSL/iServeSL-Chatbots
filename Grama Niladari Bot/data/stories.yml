@@ -1,0 +1,120 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Request Grama Niladari Certificate Path
+  steps:
+  - intent: Request_Grama_Niladari_Certificate
+  - action: utter_Request_Grama_Niladari_Certificate
+
+- story: Required Documents for Certificate
+  steps:
+  - intent: Required_Documents_For_Certificate
+  - action: utter_Required_Documents_For_Certificate
+
+- story: Check Certificate Status
+  steps:
+  - intent: Check_Certificate_Status
+  - action: utter_Check_Certificate_Status
+
+- story: New Employer Requirement
+  steps:
+  - intent: New_Employer
+  - action: utter_New_Employer
+
+- story: Find Grama Niladhari Office
+  steps:
+  - intent: My_Grama_Niladari_Office
+  - action: utter_My_Grama_Niladari_Office
+
+- story: Tree Cutdown Approval
+  steps:
+  - intent: Tree_Cutdown
+  - action: utter_Tree_Cutdown
+
+- story: Building Walls Approval
+  steps:
+  - intent: Build_Walls
+  - action: utter_Build_Walls
+
+- story: Voting Registration Process
+  steps:
+  - intent: Voting_resgistration
+  - action: utter_Voting_resgistration
+
+- story: NIC Application Process
+  steps:
+  - intent: NIC_Application
+  - action: utter_NIC_Application
+
+- story: Informing Death of a Person
+  steps:
+  - intent: Inform_Death_Of_A_Person
+  - action: utter_Inform_Death_Of_A_Person
+
+- story: Pension Allowance Application
+  steps:
+  - intent: Pension_Allowance_Application
+  - action: utter_Pension_Allowance_Application
+
+- story: Business Registration Process
+  steps:
+  - intent: Business_Registration
+  - action: utter_Business_Registration
+
+- story: Low Income Families Registration
+  steps:
+  - intent: Low_Income_Families
+  - action: utter_Low_Income_Families
+
+- story: Getting Income Certificate
+  steps:
+  - intent: Income_Certificate
+  - action: utter_Income_Certificate
+
+- story: Description of iServeSL
+  steps:
+  - intent: iServeSL_Description
+  - action: utter_iServeSL_Description
+
+- story: Contacting Grama Niladhari
+  steps:
+  - intent: Grama_Niladhari_Contact
+  - action: utter_Grama_Niladhari_Contact
+
+- story: Visiting Grama Niladhari Office
+  steps:
+  - intent: Grama_Niladhari_Office
+  - action: utter_Grama_Niladhari_Office
+
+- story: Handling Grama Certificate Request Failure
+  steps:
+  - intent: Grama_Certificate_Request_Failure
+  - action: utter_Grama_Certificate_Request_Failure  

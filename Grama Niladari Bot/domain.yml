@@ -1,0 +1,113 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Request_Grama_Niladari_Certificate
+  - Required_Documents_For_Certificate
+  - Check_Certificate_Status
+  - New_Employer
+  - My_Grama_Niladari_Office
+  - Tree_Cutdown
+  - Build_Walls
+  - Voting_resgistration
+  - NIC_Application
+  - Inform_Death_Of_A_Person
+  - Pension_Allowance_Application
+  - Business_Registration
+  - Low_Income_Families
+  - Income_Certificate
+  - iServeSL_Description
+  - Grama_Niladhari_Contact
+  - Grama_Niladhari_Office
+  - Grama_Certificate_Request_Failure
+
+responses:
+  utter_greet:
+    - text: "Hey! How can I help you?"
+  utter_goodbye:
+    - text: "Bye. Have a great day."
+  utter_affirm:
+    - text: "That sounds good!"
+  utter_deny:
+    - text: "Okay, no problem."
+  utter_mood_great:
+    - text: "Great to hear that!"
+  utter_mood_unhappy:
+    - text: "Sorry to hear that."
+  utter_happy:
+    - text: "Great to hear that! Anything else I can do for you?"
+  utter_cheer_up:
+    - text: "Cheer up! Every cloud has a silver lining."  
+  utter_did_that_help:
+    - text: "Did that help you?"  
+  utter_iamabot:
+    - text: "I am a bot designed by iServeSL to assist with government services in Sri Lanka, offering seamless and efficient support through our centralized web platform. With our cutting-edge distributed AI chatbot architecture, I'm here to automate processes and enhance your user experience, making interaction with government services effortless and intelligent."
+  utter_Request_Grama_Niladari_Certificate:
+    - text: "To request a grama niladhari certificate, please provide your NIC number, and residential address. You can do this at your local grama niladhari office or via our online portal by accessing the 'Grama Niladhari Service' on your iServeSL dashboard. Once the online request has been sent and processed, you will receive a SMS regarding the completion of the certificate. Else you can click on the 'Requests' button in your dashboard and check the status of the submitted certificate request."
+  utter_Required_Documents_For_Certificate:
+    - text: "Please bring a government-issued NIC if you are going to visit the officer physically. You can just provide the NIC number and the residential details online if you are going to request it via iServeSL."
+  utter_Check_Certificate_Status:
+    - text: "Check the status by logging into our portal. You can click on the 'Requests' button on the dashboard to check the status."
+  utter_New_Employer:
+    - text: "Yes! Most of the employers in Sri Lanka ask their new joinees to provide them a Grama Niladhari certificate to confirm that the emloyee is a valid Sri Lankan residence."
+  utter_My_Grama_Niladari_Office:
+    - text: "You can visit https://services.survey.gov.lk/gn_updating/ website and search for your residential address in order to know your grama niladhari boundary (GN Boundary)."
+  utter_Tree_Cutdown:
+    - text: "If the tree you are planning to cut down is a big one or an endagered tree, you need to get the approval of the grama niladhari before cutting it down. Officers will come to the site and investigate before allowing you to cut down such a tree."
+  utter_Build_Walls:
+    - text: "Yes! You should get an approval from the grama niladhari before building a wall around your house or garden."
+  utter_Voting_resgistration:
+    - text: "You can get your voting rights by contacting the grama niladhari and providing necessary details such as NIC number and the residential address. Note that in order to get the voting rights, you must be atleast 18 years of age."
+  utter_NIC_Application:
+    - text: "Yes! In order to apply for a new NIC, you need to provide a grama niladhari certificate to the 'Department for Registration of Persons'. You can request a grama niladhari certificate using iServeSL online portal or locally visiting the grama niladhari office in your area."
+  utter_Inform_Death_Of_A_Person:
+    - text: "Yes! Usually if a family member passed away you need to inform grama niladhari about the incident."
+  utter_Pension_Allowance_Application:
+    - text: "Yes! You need to submit a copy of the grama niladhari certificate for the 'Department of Pensions' in order to receive your pension allowance. You can request for a Grama Niladhari Certificate online using iServeSL web portal or locally visit the grama niladahri office in your area."
+  utter_Business_Registration:
+    - text: "Yes! You should accuire a grama niladari certificate when applying for a business registration. You can request for a Grama Niladhari Certificate online using iServeSL web portal or locally visit the grama niladahri office in your area."
+  utter_Low_Income_Families:
+    - text: "You can inform the grama niladhari in your area in order to get registered in the allowance program for the low income families in Sri Lank. He/She will evaluate your request and provide you a letter if you are eligible for the program. You can provide that letter to the 'Department of Samurdhi Development' in order to receive your monthly allowance."
+  utter_Income_Certificate:
+    - text: "You can contact the grama niladari in your area in order to get a income certificate. You can provide this income certificate to your bank when applying for loans."
+  utter_iServeSL_Description:
+    - text: "iServeSL revolutionizes government services in Sri Lanka through its centralized web platform, leveraging cutting-edge distributed AI chatbot architecture. By automating processes and enhancing user experience, iServeSL provides seamless access to government services, addressing inefficiencies and frustrations associated with manual procedures. Experience the future of streamlined government-citizen interaction with iServeSL, where accessing services is effortless, efficient, and intelligent."
+  utter_Grama_Niladhari_Contact:
+    - text: "You can find the contact number of the grama niladhari in your division by visiting http://moha.gov.lk:8090/officerinfo/ Enter your district and divisional secretariat in order to get this information."
+  utter_Grama_Niladhari_Office:
+    - text: "You can meet the grama niladhari in your division by visiting his/her office in the Divisinal Secretariat Office in your area."
+  utter_Grama_Certificate_Request_Failure:
+    - text: "Make sure your personal details such as NIC and residential details are correctly entered in the form. If your request keep getting rejected, please contact the grama niladhari in your division and inform him/her about the situation."
+  utter_default_fallback:
+    - text: "As a chatbot, I have limited capabilities. If you wish to get more detailed information, please contact the relevant service's customer support."
+actions:
+  - utter_Request_Grama_Niladari_Certificate
+  - utter_Required_Documents_For_Certificate
+  - utter_Check_Certificate_Status
+  - utter_New_Employer
+  - utter_My_Grama_Niladari_Office
+  - utter_Tree_Cutdown
+  - utter_Build_Walls
+  - utter_Voting_resgistration
+  - utter_NIC_Application
+  - utter_Inform_Death_Of_A_Person
+  - utter_Pension_Allowance_Application
+  - utter_Business_Registration
+  - utter_Low_Income_Families
+  - utter_Income_Certificate
+  - utter_iServeSL_Description
+  - utter_Grama_Niladhari_Contact
+  - utter_Grama_Niladhari_Office
+  - utter_Grama_Certificate_Request_Failure
+  - utter_default_fallback
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

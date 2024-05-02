@@ -1,0 +1,27 @@
+version: "3.1"
+stories:
+- story: Test necessary documents for certificate (.\tests\test_stories.yml)
+  steps:
+  - intent: Required_Documents_For_Certificate
+  - action: utter_required_documents  # predicted: utter_Required_Documents_For_Certificate
+  - bot: Please bring a government-issued NIC if you are going to visit the officer physically. You can just provide the NIC number and the residential details online if you are going to request it via iServeSL.  # predicted: action_listen
+- story: Test informing death of a person (.\tests\test_stories.yml)
+  steps:
+  - intent: Inform_Death_Of_A_Person
+  - action: utter_inform_death  # predicted: utter_Inform_Death_Of_A_Person
+  - bot: Yes! Usually if a family member passed away you need to inform grama niladhari about the incident.  # predicted: action_listen
+- story: Test Grama Niladhari office location (.\tests\test_stories.yml)
+  steps:
+  - intent: Grama_Niladhari_Office
+  - action: utter_office_location  # predicted: utter_Grama_Niladhari_Office
+  - bot: You can meet the grama niladhari in your division by visiting his/her office in the Divisional Secretariat Office in your area.  # predicted: action_listen
+- story: Test requesting a Grama Niladhari certificate (.\tests\test_stories.yml)
+  steps:
+  - intent: Request_Grama_Niladari_Certificate
+  - action: utter_request_certificate  # predicted: utter_Request_Grama_Niladari_Certificate
+  - bot: To request a grama niladhari certificate, please provide your NIC number, and residential address. You can do this at your local grama niladhari office or via our online portal by accessing the 'Grama Niladhari Service' on your iServeSL dashboard. Once the online request has been sent and processed, you will receive a SMS regarding the completion of the certificate. Else you can click on the 'Requests' button in your dashboard and check the status of the submitted certificate request.  # predicted: action_listen
+- story: Test checking certificate status (.\tests\test_stories.yml)
+  steps:
+  - intent: Check_Certificate_Status
+  - action: utter_check_status  # predicted: utter_Check_Certificate_Status
+  - bot: Check the status by logging into our portal. You can click on the 'Requests' button on the dashboard to check the status.  # predicted: action_listen
