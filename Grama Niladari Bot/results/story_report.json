@@ -1,0 +1,201 @@
+{
+  "Required_Documents_For_Certificate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "Inform_Death_Of_A_Person": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "mood_unhappy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "Please bring a government-issued NIC if you are going to visit the officer physically. You can just provide the NIC number and the residential details online if you are going to request it via iServeSL.": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "utter_office_location": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "utter_inform_death": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "utter_iamabot": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "utter_happy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "utter_check_status": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "Grama_Niladhari_Office": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "To request a grama niladhari certificate, please provide your NIC number, and residential address. You can do this at your local grama niladhari office or via our online portal by accessing the 'Grama Niladhari Service' on your iServeSL dashboard. Once the online request has been sent and processed, you will receive a SMS regarding the completion of the certificate. Else you can click on the 'Requests' button in your dashboard and check the status of the submitted certificate request.": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "action_listen": {
+    "precision": 0.8076923076923077,
+    "recall": 1.0,
+    "f1-score": 0.8936170212765957,
+    "support": 21
+  },
+  "utter_did_that_help": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "Yes! Usually if a family member passed away you need to inform grama niladhari about the incident.": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "Check the status by logging into our portal. You can click on the 'Requests' button on the dashboard to check the status.": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "utter_goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4
+  },
+  "Check_Certificate_Status": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "utter_request_certificate": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "utter_cheer_up": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3
+  },
+  "You can meet the grama niladhari in your division by visiting his/her office in the Divisional Secretariat Office in your area.": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "utter_greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5
+  },
+  "mood_great": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5
+  },
+  "utter_required_documents": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "Request_Grama_Niladari_Certificate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "micro avg": {
+    "precision": 0.9242424242424242,
+    "recall": 0.8591549295774648,
+    "f1-score": 0.8905109489051095,
+    "support": 71
+  },
+  "macro avg": {
+    "precision": 0.6485411140583554,
+    "recall": 0.6551724137931034,
+    "f1-score": 0.6515040352164344,
+    "support": 71
+  },
+  "weighted avg": {
+    "precision": 0.8022751895991334,
+    "recall": 0.8591549295774648,
+    "f1-score": 0.8276895415043453,
+    "support": 71
+  },
+  "accuracy": 0.8591549295774648,
+  "conversation_accuracy": {
+    "accuracy": 0.5833333333333334,
+    "correct": 7,
+    "with_warnings": 0,
+    "total": 12
+  }
+}
